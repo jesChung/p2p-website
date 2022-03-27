@@ -56,7 +56,7 @@ class Navbar extends Component {
                                     <DownOutlined />
                                 </a>
                             </Dropdown>
-                            <Button><a href="https://p2p-market-place.vercel.app/history">Lend NFTs</a></Button>
+                            <Button><a href="https://p2p-market-place.vercel.app/">Lend NFTs</a></Button>
                         </Anchor>
                     </div>
 
