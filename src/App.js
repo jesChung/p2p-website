@@ -23,7 +23,7 @@ function App() {
         <Description />
         <Features />
       </Content>
-      <Footer>Copyright © 2022 All rights reserved - By Jessie </Footer>
+      <Footer>Copyright © 2022 All rights reserved - By Jacky </Footer>
     </Layout>
   );
 }

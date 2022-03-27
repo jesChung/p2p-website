@@ -10,8 +10,8 @@ const { Link } = Anchor;
 const menu = (
     <Menu>
       <Menu.Item key="0">
-        <a target="_blank" href="http://google.com">
-          NFT
+        <a target="_blank" href="https://tidal-tangerine-2d4.notion.site/public-version-CutterDAO-Lightpaper-8c2ce8bff43947dc8f1977b4a90cb6eb">
+        white paper
         </a>
       </Menu.Item>
     </Menu>

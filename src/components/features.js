@@ -10,17 +10,17 @@ const { TabPane } = Tabs;
 function callback(key) {
   console.log(key);
 }
-
 const FeaturesTabs = () => (
     <Tabs defaultActiveKey="1" centered onChange={callback}>
       <TabPane tab="lend" key="1">
-        lend xxx
+      Lenders decide what they think is the fair value of the collateral, usually by looking at the asset's past performance, sales history or the <a href="https://support.opensea.io/hc/en-us/articles/4405171313171-What-is-a-floor-price-
+">floor price</a> of similar NFTs. The floor price refers to the lowest offer price for an NFT from a particular series. Once both parties agree on the terms, the NFT is transferred from the borrower's wallet into an escrow account, and a smart contract facilitates the loan.
       </TabPane>
       <TabPane tab="borrow" key="2">
-        borrow xxx
+      Borrowers can expect to get a loan amount of approximately 50% of the value of the NFT, with interest rates ranging from 20% to 80%, depending on the popularity of the NFT.
       </TabPane>
       <TabPane tab="montage" key="3">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus ducimus similique non architecto, assumenda deleniti repudiandae, vero culpa officiis eaque esse quibusdam nulla vel sequi aut possimus, dolore iste ipsam.
+      DeFi platforms use smart contracts to give users complete control over their funds. Assets that function as collateral are sent to a secure smart contract, which acts as an impartial, automated third party programmed to facilitate the lending and borrowing process.
       </TabPane>
     </Tabs>
 );

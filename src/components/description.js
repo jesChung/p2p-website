@@ -18,7 +18,7 @@ function Description() {
                     <div className='des-content-word'>
                     <h1>Enhance your NFT liquidity</h1>
                     <p>Lending and renting allows you to list your NFT on the marketplace with your desired rental terms. Collateralized renting requires the borrower to deposit collateral to rent your NFT while non-collateralized renting does not require any collateral.  </p>
-                    <Button type="primary"><a href="http://google.com">Try it</a></Button>
+                    <Button type="primary"><a href="https://p2p-market-place.vercel.app/">Try it</a></Button>
             </div>
                 </Col>
             </Row>

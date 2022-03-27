@@ -39,8 +39,8 @@ function Context() {
     return (
         <div id="context">
             <div className="titleHolder">
-            <h2>Vera is for everyone</h2>
-            <p>Vera allows any metaverse or marketplace to generate new revenue streams, 
+            <h2>CutterDAO is for everyone</h2>
+            <p>CutterDAO allows any metaverse or marketplace to generate new revenue streams, 
              reimagine user experiences, and empower communities.</p>
         </div>
         {/* <Row gutter={[32, 16]}>   
@@ -68,7 +68,7 @@ function Context() {
               </div>
               <h3>Rent</h3>
               <p>Rent NFTs to access unique experience</p>
-              <Button type="primary"><a href="http://google.com">Rent NFTs</a></Button>
+              <Button type="primary"><a href="https://p2p-market-place.vercel.app/">Rent NFTs</a></Button>
             </div>
             </Col>
             <Col md={{ span: 8 }} sm={{span: 24}} xs={{span: 24}}>
@@ -78,7 +78,7 @@ function Context() {
               </div>
               <h3>Lend</h3>
               <p>Lend your NFTs and earn passive income</p>
-              <Button type="primary"><a href="http://google.com">Lend NFTs</a></Button>
+              <Button type="primary"><a href="https://p2p-market-place.vercel.app/">Lend NFTs</a></Button>
             </div>
             </Col>
             <Col md={{ span: 8 }} sm={{span: 24}} xs={{span: 24}}>
