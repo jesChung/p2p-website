@@ -78,9 +78,7 @@ class Navbar extends Component {
                         }}
                         >
                         <div className="logo2">
-                            <i className="fas fa-bolt">
-                            <a href="http://google.com">logo</a>
-                            </i>
+                            <Image src={logo} preview={false} ></Image>
                         </div>
                         <Button
                             type="primary"
@@ -133,7 +131,7 @@ class Navbar extends Component {
                                     borderRadius: 36,
                                     Color: '#ff556e',
                                     borderColor: '#ff556e'}}>
-                                <a href="https://p2p-market-place.vercel.app/history">Lend NFTs</a>
+                                <a href="https://p2p-market-place.vercel.app/">Lend NFTs</a>
                                 </Button>
                             </Menu.Item>
                         </Menu>

@@ -374,6 +374,9 @@ h1 {
 }
 
 @media only screen and (max-width: 767px) {
+    .logo2 .ant-image-img {
+        width: 30px !important;
+    }
     .mobileVisible {
         display: flex;
         width: 100%;
