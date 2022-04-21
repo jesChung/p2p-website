@@ -37,26 +37,26 @@ class Navbar extends Component {
           visible: !this.state.visible
         });
     };
-
+    
     render() { 
         return (
             <div className="container-fluid">
-                <div className="header">
+                <div className="header justify-between flex pt-[25px] pr-[25px] pb-[8px] pl-[32px] items-center">
                     <div className="logo">
                         <Image src={logo} preview={false} ></Image>
                     </div>
                     <div className='mobileHidden'>
-                        <Anchor targetOffset="48" >
-                            <Link href="#description" title="Description" />
-                            <Link href="#features" title="Features">
+                        <Anchor targetOffset="48" className='flex item-center text-5xl font-bold' >
+                            <Link href="#description" title="Description" className='px-[20px] hover:text-[#ff556e]'/>
+                            <Link href="#features" title="Features" className='px-[20px]'>
                             </Link>
-                            <Dropdown overlay={menu}>
-                                <a className="ant-dropdown-link" onClick={e => e.preventDefault()}>
+                            <Dropdown overlay={menu} className='px-5 items-center text-black hover:text-[#ff556e]'>
+                                <a className="ant-dropdown-link " onClick={e => e.preventDefault()}>
                                 Extra  
                                     <DownOutlined />
                                 </a>
                             </Dropdown>
-                            <Button><a href="https://p2p-market-place.vercel.app/">Lend NFTs</a></Button>
+                            <Button className='ant-btn-default'><a href="https://p2p-market-place.vercel.app/">Lend NFTs</a></Button>
                         </Anchor>
                     </div>
 

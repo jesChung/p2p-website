@@ -77,13 +77,13 @@ h1 {
 }
 
 /* header */
-.ant-anchor{
+--.ant-anchor{
     font-size: 18px;
 }
 .ant-anchor-wrapper {
     font-weight: bold;
 }
-.ant-layout-header {
+--.ant-layout-header {
     position: fixed;
     left: 0;
     right: 0;
@@ -102,7 +102,7 @@ h1 {
     align-items: center;
 }
 
-.header .ant-anchor-ink {
+--.header .ant-anchor-ink {
     display: none;
 }
 
@@ -110,11 +110,11 @@ h1 {
     padding: 0 20px;
 }
 
-.ant-anchor-link-title:hover {
+--.ant-anchor-link-title:hover {
     color: #ff556e;
 }
 
-.ant-anchor-link-active .ant-anchor-link-title {
+--.ant-anchor-link-active .ant-anchor-link-title {
     color: #ff556e;
 }
 

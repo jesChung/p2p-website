@@ -11,8 +11,8 @@ function callback(key) {
   console.log(key);
 }
 const FeaturesTabs = () => (
-    <Tabs defaultActiveKey="1" centered onChange={callback}>
-      <TabPane tab="lend" key="1">
+    <Tabs defaultActiveKey="1" centered onChange={callback}   className="active:bg-red-700">
+      <TabPane tab="lend" key="1" className="active:bg-blue-700" >
       Lenders decide what they think is the fair value of the collateral, usually by looking at the asset's past performance, sales history or the <a href="https://support.opensea.io/hc/en-us/articles/4405171313171-What-is-a-floor-price-
 ">floor price</a> of similar NFTs. The floor price refers to the lowest offer price for an NFT from a particular series. Once both parties agree on the terms, the NFT is transferred from the borrower's wallet into an escrow account, and a smart contract facilitates the loan.
       </TabPane>

@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "~antd/dist/antd.css";
+
+:root {
+    --primary: #ff556e;
+}
+
+@layer components {
+    .icon {
+        @apply rounded-lg w-[150px] h-auto  
+    }
+}
+
+.btn-primary {
+    @apply rounded-[36px] m-[15px] text-white bg-[#ff556e] border-[#ff556e] shadow-[#f7fafd]
+    hover:bg-[#f7fafd] hover:text-[#ff556e] hover:border-[#ff556e]
+}
+
+.btn {
+  @apply mx-[33.3%] px-[34px] p-[19px]
+}
+
+.btn-primary-home {
+    @apply shadow-[#f7fafd] mr-2 px-[38px] py-6 flex items-center font-bold
+}
+
+.btnlearn {
+    @apply text-[#ff556e] bg-[#f7fafd] border-[#f7fafd] shadow-none font-bold text-sm text-center
+}
+
+
+.ant-btn-default:hover {
+    background-color: #ff556e;
+    color: white;
+    border: none;
+}
+.ant-btn-default {
+    @apply ml-[10px] rounded-[36px] text-[#ff556e] border-[#ff556e] font-bold border-4 text-center
+}
+
+
+
