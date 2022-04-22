@@ -10,11 +10,11 @@ const { TabPane } = Tabs;
 function callback(key) {
   console.log(key);
 }
+
 const FeaturesTabs = () => (
-    <Tabs defaultActiveKey="1" centered onChange={callback}   className="active:bg-red-700">
-      <TabPane tab="lend" key="1" className="active:bg-blue-700" >
-      Lenders decide what they think is the fair value of the collateral, usually by looking at the asset's past performance, sales history or the <a href="https://support.opensea.io/hc/en-us/articles/4405171313171-What-is-a-floor-price-
-">floor price</a> of similar NFTs. The floor price refers to the lowest offer price for an NFT from a particular series. Once both parties agree on the terms, the NFT is transferred from the borrower's wallet into an escrow account, and a smart contract facilitates the loan.
+    <Tabs defaultActiveKey="1" centered onChange={callback} className='mt-[100px] px-12 pb-[30px] text-base text-left'>
+      <TabPane tab="lend" key="1" className='mt-[60px]' >
+      Lenders decide what they think is the fair value of the collateral, usually by looking at the asset's past performance, sales history or the <a href="https://support.opensea.io/hc/en-us/articles/4405171313171-What-is-a-floor-price-">floor price</a> of similar NFTs. The floor price refers to the lowest offer price for an NFT from a particular series. Once both parties agree on the terms, the NFT is transferred from the borrower's wallet into an escrow account, and a smart contract facilitates the loan.
       </TabPane>
       <TabPane tab="borrow" key="2">
       Borrowers can expect to get a loan amount of approximately 50% of the value of the NFT, with interest rates ranging from 20% to 80%, depending on the popularity of the NFT.
@@ -39,18 +39,12 @@ const style = {
 function Features() {
     return(
         <div id="features"className='feature-content'> 
-
-            <Row>
+            <Row className='text-center px-12'>
                 <Col md={{ span: 12 }} sm={{span: 24}} xs={{span: 24}}>
                     <FeaturesTabs />
-
-                    {/* <Button >Try it</Button>
-                    <Button >Try it</Button>
-                    <Button >Try it</Button>
-                    <p> to keep track of their completion. Sync provides multiple scheduling options including alarms and reminders.</p> */}
                 </Col>
                 <Col md={{ span: 12 }} sm={{span: 24}}>
-                    <Image src={black} preview={false}></Image>,
+                    <Image src={black} preview={false} className='p-[50px]'></Image>,
 
                 </Col>
             </Row>

@@ -42,16 +42,16 @@ class Navbar extends Component {
         return (
             <div className="container-fluid">
                 <div className="header justify-between flex pt-[25px] pr-[25px] pb-[8px] pl-[32px] items-center">
-                    <div className="logo">
-                        <Image src={logo} preview={false} ></Image>
+                    <div className="logo" >
+                        <Image src={logo} preview={false} className='hidden md:block'></Image>
                     </div>
-                    <div className='mobileHidden'>
-                        <Anchor targetOffset="48" className='flex item-center text-5xl font-bold' >
-                            <Link href="#description" title="Description" className='px-[20px] hover:text-[#ff556e]'/>
-                            <Link href="#features" title="Features" className='px-[20px]'>
+                    <div className='mobileHidden hidden md:block'>
+                        <Anchor targetOffset="48" className='font-bold' >
+                            <Link href="#description" title="Description" className='px-[20px] hover:text-[#ff556e] text-[18px]'/>
+                            <Link href="#features" title="Features" className='px-[20px] text-[18px]'>
                             </Link>
-                            <Dropdown overlay={menu} className='px-5 items-center text-black hover:text-[#ff556e]'>
-                                <a className="ant-dropdown-link " onClick={e => e.preventDefault()}>
+                            <Dropdown overlay={menu} className='px-5 items-center text-black hover:text-[#ff556e] text-[18px]'>
+                                <a className="ant-dropdown-link " onClick={e => e.preventDefault()} className='py-[7px] pl-4'>
                                 Extra  
                                     <DownOutlined />
                                 </a>
@@ -59,14 +59,9 @@ class Navbar extends Component {
                             <Button className='ant-btn-default'><a href="https://p2p-market-place.vercel.app/">Lend NFTs</a></Button>
                         </Anchor>
                     </div>
-
+                    
                     <div
-                        className="mobileVisible"
-                        // style={{
-                        // width: "100%",
-                        // display: "flex",
-                        // justifyContent: "space-between"
-                        // }}
+                        className="mobileVisible w-full	justify-between	flex md:hidden"
                     >
                         <div
                         className="mBtnCtnContainer"
@@ -78,13 +73,14 @@ class Navbar extends Component {
                         }}
                         >
                         <div className="logo2">
-                            <Image src={logo} preview={false} ></Image>
+                            <Image src={logo} preview={false} className='w-[30px]'></Image>
                         </div>
                         <Button
                             type="primary"
                             color='#ff556e'
                             onClick={this.toggleCollapsed}
                             style={{ marginBottom: 16 }}
+                            className='flex focus:bg-[#ff556e] focus:border-[#ff556e] rounded-none border-[#f7fafd] text-[#333] py-6 px-9 '
                         >
                             {React.createElement(
                             this.state.collapsed ? MenuUnfoldOutlined : MenuFoldOutlined
@@ -97,37 +93,29 @@ class Navbar extends Component {
                         onClick={handleClick}
                         style={{
                             backgroundColor: '#f7fafd',
-                            // width: 265,
                             position: "absolute",
                             left: "0",
                             top: "80px",
-                            display: this.state.visible ? "block" : "none"
+                            display: this.state.visible ? "block" : "none",
+                            width: "710px"
                         }}
                         mode="inline"
+                        className='mr-[50px] ml-[180px] p-0 left-[50px]'
                         >
-                            <Menu.Item key="1" >
+                            <Menu.Item key="1" className='p-0 left-[50px]'>
                                 <a href="#description" >Description</a>
                             </Menu.Item>
-                            <Menu.Item key="2">
+                            <Menu.Item key="2" className='p-0 left-[50px]'>
                                 <a href="#features">Feature</a>
                             </Menu.Item>
 
-                            <SubMenu key="sub1" icon={<></> } title="Extra >" >
+                            <SubMenu key="sub1" icon={<></> } title="Extra >" className='p-0 left-[50px]'>
                                 <Menu.Item key="3" >
                                 <a href="http://google.com">NFT</a>
                                 </Menu.Item>
                             </SubMenu>
-                            {/* <Menu.Item key="3">
-                                <Dropdown overlay={menu}>
-                                    <a className="ant-dropdown-link" onClick={e => e.preventDefault()}>
-                                    Extra  
-                                        <DownOutlined />
-                                    </a>
-                                </Dropdown>
-                            </Menu.Item>  */}
-
-                            <Menu.Item key="4">
-                                <Button className='btnLend' style={{
+                            <Menu.Item key="4" className='p-0 left-[50px]'>
+                                <Button className='btnLend text-center ant-btn-default' style={{
                                     borderRadius: 36,
                                     Color: '#ff556e',
                                     borderColor: '#ff556e'}}>

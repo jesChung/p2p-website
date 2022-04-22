@@ -13,20 +13,20 @@ import Features from './components/features';
 const { Header, Content, Footer } = Layout;
 // import Footer from "antd/lib/Footer";
 
-
 function App() {
   return (
-    <Layout className="mainLayout ">
-      <Header className='fixed left-0 right-0 z-999'>
+    <Layout className="mainLayout bg-[#f7fafd]">
+      <Header className='bg-[#f7fafd] h-auto leading-7' 
+      style={{position: "fixed", left: 0, right: 0, zIndex: 999}}>
         <Navbar/>
       </Header>
-      <Content>
+      <Content className='mt-[180px] md:mt-[210px] xl:mt-[280px]'>
         <HomeContent />
         <Context />
         <Description />
         <Features />
       </Content>
-      <Footer className='text-center'>Copyright © 2022 All rights reserved - By Jacky </Footer>
+      <Footer className='text-center bg-[#f7fafd]'>Copyright © 2022 All rights reserved - By Jessie </Footer>
     </Layout>
   );
 }
