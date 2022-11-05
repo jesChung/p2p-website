@@ -47,7 +47,7 @@ class Navbar extends Component {
                     </div>
                     <div className='mobileHidden hidden md:block'>
                         <Anchor targetOffset="48" className='font-bold' >
-                            <Link href="#saya" title="Saya" className='px-[20px] hover:text-[#ff556e] text-[18px]'/>
+                        <div className='px-[20px] text-[18px]'>Saya</div>
                             <Link href="#about us" title="about us" className='px-[20px] text-[18px]'>
                             </Link>
                             <Link href="#service" title="service" className='px-[20px] text-[18px]'>
