@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "~antd/dist/antd.css";
+
+:root {
+    --primary: #ff556e;
+}
+
+@layer components {
+    .icon .ant-image-img{
+        @apply rounded-lg w-[150px] h-auto items-center
+    }
+}
+.row {
+    @apply px-12 text-center flex-row flex-wrap
+}
+
+.btn-primary {
+    @apply rounded-[36px] my-[15px] text-white bg-[#ff556e] border-[#ff556e] shadow-[#f7fafd]
+    hover:bg-[#f7fafd] hover:text-[#ff556e] hover:border-[#ff556e] font-bold items-center	
+}
+
+.btn {
+  @apply mx-[33.3%] px-[34px] p-[19px] items-center
+}
+
+.btn-primary-home {
+    @apply shadow-[#f7fafd] mr-2 px-[38px] py-6 flex items-center 
+}
+
+.btnlearn {
+    @apply text-[#ff556e] bg-[#f7fafd] border-[#f7fafd] shadow-none font-bold text-sm text-center items-center 
+}
+
+.ant-btn-default {
+    @apply ml-[10px] rounded-[36px] text-[#ff556e] border-[#ff556e] font-bold border-4 text-center hover:bg-[#ff556e] hover:text-white hover:border-[#ff556e] items-center 
+}
+
+/* .ant-image {
+    padding: 50px;
+} */
+
+/* anchor */
+.header .ant-anchor-ink {
+    display: none;
+}
+
+.ant-anchor-link-title:hover {
+    color: #ff556e;
+}
+
+.ant-anchor-link-active .ant-anchor-link-title {
+    color: #ff556e;
+}
+
+.ant-affix {
+    background-color: #f7fafd;
+}
+
+.header .ant-anchor {
+    display: flex;
+    align-items: center;
+}
+
+.ant-menu-item-selected a,
+.ant-menu-item-selected a:hover {
+    color: #ff556e;
+}
+
+/* feature */
+.ant-tabs-tab-btn {
+    background-color: white;
+    color: #333;
+    padding: 8px 24px;
+}
+.ant-tabs-tab-btn {
+    background-color: white;
+    color: #333;
+    padding: 8px 24px;
+}
+.ant-tabs.ant-tabs-top.ant-tabs-mobile.ant-tabs-centered {
+    padding-left: 50px;
+    text-align: left;
+}
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: #f7fafd;
+    background-color: #ff556e;
+    font-weight: bold;
+}
+.ant-tabs-ink-bar {
+    visibility: hidden;
+}
+/* menu */
+.ant-drawer-content-wrapper {
+    height: max-content;
+}
+.ant-menu.ant-menu-inline-collapsed > .ant-menu-item {
+    padding: 0;
+    left: 50px;
+}
+
+.ant-menu.ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title {
+    padding: 0;
+    left: 50px;
+}
+
+.ant-menu ul, .ant-menu ol {
+    margin: 0px 50px 0 180px;
+}
+
+.ant-menu.ant-menu-inline-collapsed {
+    width: 710px;
+}
+
+@media only screen and (max-width: 767px) {
+    .ant-image {
+        padding-top: 0px;
+        padding-bottom: 0;
+    }
+}
+@media only screen and (max-width: 567px) {
+    .ant-menu.ant-menu-inline-collapsed > .ant-menu-item {
+        padding: 0;
+        left: 50px;
+    }
+
+    .ant-menu.ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title {
+        padding: 0;
+        left: 50px;
+    }
+
+    .ant-menu.ant-menu-inline-collapsed {
+        width: 500px;
+    }
+}

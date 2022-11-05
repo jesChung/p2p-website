@@ -110,19 +110,19 @@ h1 {
     padding: 0 20px;
 }
 
-.ant-anchor-link-title:hover {
+--.ant-anchor-link-title:hover {
     color: #ff556e;
 }
 
-.ant-anchor-link-active .ant-anchor-link-title {
+--.ant-anchor-link-active .ant-anchor-link-title {
     color: #ff556e;
 }
 
-.ant-affix {
+--.ant-affix {
     background-color: #f7fafd;
 }
 
-.nt-dropdown-link {
+.ant-dropdown-link {
     color: black;
     padding: 0 20px;
     align-items: center;
@@ -292,7 +292,7 @@ h1 {
 .ant-tabs > .ant-tabs-nav {
     margin-top: 100px;
 }
-.ant-tabs-tab-btn {
+--.ant-tabs-tab-btn {
     background-color: white;
     color: #333;
     padding: 8px 24px;
@@ -303,13 +303,13 @@ h1 {
     font-size: 16px;
 }
 
-.ant-tabs.ant-tabs-top.ant-tabs-mobile.ant-tabs-centered {
+--.ant-tabs.ant-tabs-top.ant-tabs-mobile.ant-tabs-centered {
     padding-left: 50px;
     text-align: left;
 
 }
 
-.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+--.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
     color: #f7fafd;
     background-color: #ff556e;
     font-weight: bold;
@@ -403,7 +403,7 @@ h1 {
         padding: 19px 34px;
     }
 
-    .contextRow .ant-row {
+    --.contextRow .ant-row {
         flex-flow: nowrap;
     }
 
@@ -419,7 +419,7 @@ h1 {
         text-align: center;
     }
 
-    .ant-menu-light .ant-menu-submenu-title:hover {
+    --.ant-menu-light .ant-menu-submenu-title:hover {
         color: #ff556e;
     }
 
@@ -518,7 +518,7 @@ h1 {
     }
 
     .des-content {
-        padding: 0px 0 64px;
+        padding: 0 0 64px;
     }
 }
   

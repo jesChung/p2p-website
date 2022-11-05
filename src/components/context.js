@@ -1,94 +1,47 @@
 import React from 'react';
 
 import { Row, Col, Image, Button } from 'antd';
-import rent from '../../src/img/lending.png';
-import lend from '../../src/img/exchange.png';
-import mortgage from '../../src/img/stable.png';
-
-// const items = [
-//   {
-//     key: '1',
-//     img: <Image src={lend}></Image>,
-//     title: 'Rent',
-//     content: 'Rent NFTs to access unique experience',
-//     button: 'Rent NFTs',
-//     // type='primary'
-//   },
-//   {
-//     key: '2',
-//     img: <Image src={rent}></Image>,
-//     title: 'Lend',
-//     content: 'Lend your NFTs and earn passive income',
-//     button: 'Lend NFTs',
-//     // type='primary'
-//   },
-//   {
-//     key: '3',
-//     img: <Image src={mortgage}></Image>,
-//     title: 'Mortgage',
-//     content: 'Let\'s help you afford your favorite NFTs',
-//     button: 'Coming soon',
-//     // type='primary'
-//   },
-// ]
-
-  
-
+import paper from '../../src/img/paper.jpg';
+import people from '../../src/img/people.jpg';
+import house from '../../src/img/house.jpg';
 
 function Context() {
     return (
-        <div id="context">
-            <div className="titleHolder">
-            <h2>CutterDAO is for everyone</h2>
-            <p>CutterDAO allows any metaverse or marketplace to generate new revenue streams, 
-             reimagine user experiences, and empower communities.</p>
-        </div>
-        {/* <Row gutter={[32, 16]}>   
-          {items.map(item => {
-            return (
-              <Col md={{ span: 8 }} key={item.key}>
-                <div className="content">
-                  <div className="icon">
-                    {item.img}
-                  </div>
-                  <h3>{item.title}</h3>
-                  <p>{item.content}</p>
-                  <Button type='primary'>{item.button}</Button>
-                </div>
-              </Col>
-
-            );
-          })}
-        </Row> */}
-        <Row gutter={[32, 16]} className="contextRow">
+        <div id="service" className='567:mb-[128px] mb-[64px]'>
+          {/* <div className="titleHolder">
+            <h2 className='mt-5 mb-[15px] text-center text-[40px]'>生活碳排紀錄</h2>
+            <p className='mx-[93px] mb-9 text-center text-base whitespace-pre-line'>
+              食衣住行育樂</p>
+          </div> */}
+        <Row gutter={[32, 16]} className="contextRow px-12 row">
             <Col md={{ span: 8 }} sm={{span: 24}} xs={{span: 24}}>
-            <div className="content">
-              <div className="icon">
-                <Image src={lend} preview={false}></Image>
+            <div className="content ">
+              <div className="icon ">
+                <Image src={paper} preview={false} className='block m-auto '></Image>
               </div>
-              <h3>Rent</h3>
-              <p>Rent NFTs to access unique experience</p>
-              <Button type="primary"><a href="https://p2p-market-place.vercel.app/">Rent NFTs</a></Button>
+              <h3 className='text-[27px]'>生活碳排紀錄</h3>
+              <p>食衣住行育樂</p>
+              {/* <Button type="primary" className='context btn-primary py-[19px] px-[34px] mx-[35%] flex sm:mx-[40%] items-center md:mx-[20%] lg:mx-[25%] xl:mx-[33%]'><a href="https://p2p-market-place.vercel.app/">Rent NFTs</a></Button> */}
             </div>
             </Col>
             <Col md={{ span: 8 }} sm={{span: 24}} xs={{span: 24}}>
             <div className="content">
               <div className="icon">
-                <Image src={rent} preview={false}></Image>
+                <Image src={people} preview={false} className='block m-auto'></Image>
               </div>
-              <h3>Lend</h3>
-              <p>Lend your NFTs and earn passive income</p>
-              <Button type="primary"><a href="https://p2p-market-place.vercel.app/">Lend NFTs</a></Button>
+              <h3 className='text-[27px]'>ESG 知識科普</h3>
+              <p>與各大與各大基金/協會協會合作倡議</p>
+              {/* <Button type="primary" className='btn-primary py-[19px] px-[34px] flex mx-[35%] sm:mx-[40%] md:mx-[20%] lg:mx-[25%] xl:mx-[33%]'><a href="https://p2p-market-place.vercel.app/">Lend NFTs</a></Button> */}
             </div>
             </Col>
             <Col md={{ span: 8 }} sm={{span: 24}} xs={{span: 24}}>
             <div className="content">
               <div className="icon">
-                <Image src={mortgage} preview={false}></Image>
+                <Image src={house} preview={false} className='block m-auto'></Image>
               </div>
-              <h3>Mortgage</h3>
-              <p>Let's help you afford your favorite NFTs</p>
-              <Button type="primary" disabled>Coming soon</Button>
+              <h3 className='text-[27px]'>住家能源自主</h3>
+              <p>企業能源自主</p>
+              <Button type="primary" disabled className='btn-primary py-[19px] px-[34px] flex mx-[35%] sm:mx-[40%] md:mx-[20%] lg:mx-[25%] xl:mx-[33%]'>Coming soon</Button>
             </div>
           </Col>
         </Row>
