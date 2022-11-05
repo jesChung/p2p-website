@@ -43,7 +43,6 @@ class Navbar extends Component {
             <div className="container-fluid">
                 <div className="header justify-between flex pt-[25px] pr-[25px] pb-[8px] pl-[32px] items-center">
                     <div className="logo" >
-                        {/* <Image src={logo} preview={false} className='hidden md:block'></Image> */}
                         <div>Saya 低碳生活</div>
                     </div>
                     <div className='mobileHidden hidden md:block'>
