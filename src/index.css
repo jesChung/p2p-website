@@ -20,13 +20,13 @@
   margin: 16px 0 16px 24px;
 }
 
+.logo .ant-image{
+  padding: 0
+}
 .logo {
   /* width: 50px !important; */
   padding: 0;
   font-size: 18px;
   font-weight: bold
-}
 
-.logo .ant-image{
-  padding: 0
 }

@@ -43,7 +43,7 @@ class Navbar extends Component {
             <div className="container-fluid">
                 <div className="header justify-between flex pt-[25px] pr-[25px] pb-[8px] pl-[32px] items-center">
                     <div className="logo" >
-                        <div>Saya 低碳生活</div>
+                        Saya 低碳生活
                     </div>
                     <div className='mobileHidden hidden md:block'>
                         <Anchor targetOffset="48" className='font-bold' >
@@ -63,7 +63,7 @@ class Navbar extends Component {
                     </div>
                     
                     <div
-                        className="mobileVisible"
+                        className="mobileVisible block md:hidden"
                     >
                         <div
                         className="mBtnCtnContainer"
@@ -74,9 +74,10 @@ class Navbar extends Component {
                             alignItems: "center"
                         }}
                         >
-                        <div className="logo2">
+                        {/* <div className="logo2">
+                        Saya 低碳生活
                             <Image src={logo} preview={false} className='w-[30px]'></Image>
-                        </div>
+                        </div> */}
                         <Button
                             type="primary"
                             color='#ff556e'
