@@ -23,10 +23,10 @@ function App() {
       <Content className='mt-[180px] md:mt-[210px] xl:mt-[280px]'>
         <HomeContent />
         <Context />
-        <Description />
-        <Features />
+        {/* <Description />
+        <Features /> */}
       </Content>
-      <Footer className='text-center bg-[#f7fafd]'>Copyright © 2022 All rights reserved - By Jessie </Footer>
+      <Footer className='text-center bg-[#f7fafd]'>Copyright © 2022 All rights reserved - By Saya </Footer>
     </Layout>
   );
 }

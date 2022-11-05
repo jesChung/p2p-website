@@ -21,8 +21,10 @@
 }
 
 .logo {
-  width: 50px !important;
-  padding: 0
+  /* width: 50px !important; */
+  padding: 0;
+  font-size: 18px;
+  font-weight: bold
 }
 
 .logo .ant-image{
