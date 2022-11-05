@@ -62,11 +62,6 @@ class Navbar extends Component {
 
                     <div
                         className="mobileVisible"
-                        // style={{
-                        // width: "100%",
-                        // display: "flex",
-                        // justifyContent: "space-between"
-                        // }}
                     >
                         <div
                         className="mBtnCtnContainer"
